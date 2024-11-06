@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+  body{
+    font-family: "Cominc Sans MS";
+  }
+}
+
+@layer components {
+  .search-input{
+    @apply mb-5 w-60 block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+}
+
+@layer utilities {
+  .grayed-out-disabled {
+    @apply disabled:opacity-50
+  }
+}
